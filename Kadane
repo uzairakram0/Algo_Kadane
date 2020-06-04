@@ -1,0 +1,7 @@
+//Uzair Akram - Pseudo Code
+Kadane(A[])
+    int MaxSum = sum = A[0]
+    for (int i = 1; i < A.size; i++)
+        sum = max(sum + A[i], A[i])
+        MaxSum = max(sum, MaxSum)
+    return MaxSum

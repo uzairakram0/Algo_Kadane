@@ -1,0 +1,17 @@
+//Uzair Akram - Pseudo code
+MaxSubarray(A[]){
+    int MaxSum = 0
+    
+    for(int i = 0; i < A.size; i++){
+        int sum = 0
+        
+        for (int j = 0; j < i; j++){
+            sum+=A[j]
+            
+            if sum > MaxSum
+                MaxSum = sum
+        }
+    }
+    
+    return MaxSum
+}
